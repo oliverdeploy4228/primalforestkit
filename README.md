@@ -1,4 +1,4 @@
-# VersionChecker-1db6d9
+# VersionChecker-96c62b
 
 A Java VersionChecker utility.
 

